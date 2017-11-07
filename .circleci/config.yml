@@ -13,4 +13,4 @@ jobs:
           command: date
       - run:
           name: Compilation check
-          command: cd tools/NewClassMaker/; cmake CMAKE_BUILD_TYPE=Release ; make
+          command: cd NewClassMaker/; cmake CMAKE_BUILD_TYPE=Release ; make
