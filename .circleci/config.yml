@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Install compiler
-          command: sudo aptitude install cmake
+          command: sudo aptitude update; sudo aptitude install cmake
       - run:
           name: Greeting
           command: echo Hello, world.
