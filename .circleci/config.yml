@@ -1,6 +1,7 @@
 version: 2
 jobs:
   build:
+    working_directory: ~/NewClassMaker
     docker:
       - image: debian:stretch
     steps:
@@ -13,4 +14,4 @@ jobs:
           command: date
       - run:
           name: Compilation check
-          command: cd NewClassMaker/; which cmake ; cmake CMAKE_BUILD_TYPE=Release ; make
+          command: cmake CMAKE_BUILD_TYPE=Release ; make
