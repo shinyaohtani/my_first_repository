@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/NewClassMaker
     docker:
-      - image: circleci/frontend
+      - image: circleci/build-image
     steps:
       - checkout
       - run:
