@@ -2,8 +2,10 @@ version: 2
 jobs:
   build:
     working_directory: ~/NewClassMaker
-    docker:
-      - image: circleci/build-image
+      machine:
+        - image: circleci/classic:latest
+#    docker:
+#      - image: circleci/build-image
     steps:
       - checkout
       - run:
